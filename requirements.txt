@@ -6,3 +6,4 @@ pandas
 schrutepy
 plotly
 nltk
+vadersentiment
