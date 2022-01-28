@@ -1,0 +1,6 @@
+pandas
+streamlit
+cufflinks
+numpy
+pandas
+schrutepy
