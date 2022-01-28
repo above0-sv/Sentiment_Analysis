@@ -7,3 +7,5 @@ schrutepy
 plotly
 nltk
 vadersentiment
+re
+string
