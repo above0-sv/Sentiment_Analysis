@@ -19,6 +19,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import confusion_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 import nltk
+nltk.download()
 #nltk.download('stopwords')
 from nltk.corpus import stopwords
 
