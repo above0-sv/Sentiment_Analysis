@@ -1,11 +1,7 @@
 pandas
 streamlit
-cufflinks
 numpy
 pandas
-schrutepy
-plotly
 nltk
-vadersentiment
 re
 string
