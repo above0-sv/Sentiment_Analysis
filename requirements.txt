@@ -1,10 +1,4 @@
 pandas
 streamlit
-pandas
-re
-string
-matplotlib
-seaborn
-sklearn
-nlkt
-
+plotly
+cufflinks
