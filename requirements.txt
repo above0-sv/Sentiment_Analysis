@@ -4,3 +4,4 @@ cufflinks
 numpy
 pandas
 schrutepy
+plotly
