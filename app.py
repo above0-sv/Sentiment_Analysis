@@ -1,6 +1,4 @@
 from schrutepy import schrutepy
-import matplotlib.pyplot as plt
-from matplotlib.pyplot import figure
 import nltk
 from nltk.corpus import stopwords
 from PIL import Image
