@@ -1,6 +1,10 @@
 pandas
 streamlit
-numpy
 pandas
 re
 string
+matplotlib
+seaborn
+sklearn
+nlkt
+
