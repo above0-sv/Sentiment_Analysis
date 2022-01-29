@@ -4,6 +4,7 @@ import plotly as plt
 st.write('Sentimental Analysis report')
 df=pd.read_csv('nuevo.csv')
 df.head()
+st.dataframe(df)  
 from plotly.offline import init_notebook_mode,iplot
 import plotly.graph_objects as go
 import cufflinks as cf
