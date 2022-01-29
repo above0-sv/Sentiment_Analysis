@@ -49,3 +49,12 @@ layout = go.Layout(title="compound Distribution")
 fig = go.Figure(data = data,layout = layout)
 iplot(fig)
 st.plotly_chart(fig, use_container_width=True)
+# defining data
+trace = go.Histogram(x=df['influencer'],nbinsx=40,histnorm='percent')
+data = [trace]
+# defining layout
+layout = go.Layout(title="Influencer Distribution")
+# defining figure and plotting
+fig = go.Figure(data = data,layout = layout)
+iplot(fig)
+st.plotly_chart(fig, use_container_width=True)
