@@ -39,4 +39,4 @@ data = [trace]
 layout = go.Layout(title="post_type Distribution")
 # defining figure and plotting
 fig = go.Figure(data = data,layout = layout)
-iplot(fig)
+st.pyplot(fig)
