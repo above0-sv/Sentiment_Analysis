@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import plotly as plt
-st.write('Sentimental Analysis report')
+st.write('Above Zero Chegg Sentimental Analysis report')
 df=pd.read_csv('chegg_final.csv')
 df.head() 
 from plotly.offline import init_notebook_mode,iplot
@@ -39,4 +39,13 @@ data = [trace]
 layout = go.Layout(title="post_type Distribution")
 # defining figure and plotting
 fig = go.Figure(data = data,layout = layout)
+st.plotly_chart(fig, use_container_width=True)
+# defining data
+trace = go.Histogram(x=df['compound'],nbinsx=40,histnorm='percent')
+data = [trace]
+# defining layout
+layout = go.Layout(title="compound Distribution")
+# defining figure and plotting
+fig = go.Figure(data = data,layout = layout)
+iplot(fig)
 st.plotly_chart(fig, use_container_width=True)
