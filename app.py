@@ -22,7 +22,7 @@ data = [trace]
 layout = go.Layout(title="Sentiment Distribution")
 fig = go.Figure(data = data,layout = layout)
 iplot(fig)
-st.pyplot(fig)
+st.plotly_chart(fig, use_container_width=True)
 # defining data
 trace = go.Histogram(x=df['platform'],nbinsx=40,histnorm='percent')
 data = [trace]
@@ -31,7 +31,7 @@ layout = go.Layout(title="platform Distribution")
 # defining figure and plotting
 fig = go.Figure(data = data,layout = layout)
 iplot(fig)
-st.pyplot(fig)
+st.plotly_chart(fig, use_container_width=True)
 # defining data
 trace = go.Histogram(x=df['post_type'],nbinsx=40,histnorm='percent')
 data = [trace]
@@ -39,4 +39,4 @@ data = [trace]
 layout = go.Layout(title="post_type Distribution")
 # defining figure and plotting
 fig = go.Figure(data = data,layout = layout)
-st.pyplot(fig)
+st.plotly_chart(fig, use_container_width=True)
