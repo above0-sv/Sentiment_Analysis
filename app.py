@@ -27,6 +27,7 @@ st.plotly_chart(fig, use_container_width=True)
 # defining data
 trace = go.Histogram(x=df['platform'],nbinsx=50,histnorm='percent')
 data = [trace]
+st.subheader('Platform distribution')
 # defining layout
 layout = go.Layout(title="Platform Distribution")
 # defining figure and plotting
