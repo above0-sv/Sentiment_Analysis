@@ -25,7 +25,7 @@ fig = go.Figure(data = data,layout = layout)
 iplot(fig)
 st.plotly_chart(fig, use_container_width=True)
 # defining data
-trace = go.Histogram(x=df['platform'],nbinsx=40,histnorm='percent')
+trace = go.Histogram(x=df['platform'],nbinsx=50,histnorm='percent')
 data = [trace]
 # defining layout
 st.markdown('The platform used by the users was Youtube')
@@ -35,7 +35,7 @@ fig = go.Figure(data = data,layout = layout)
 iplot(fig)
 st.plotly_chart(fig, use_container_width=True)
 # defining data
-trace = go.Histogram(x=df['post_type'],nbinsx=40,histnorm='percent')
+trace = go.Histogram(x=df['post_type'],nbinsx=50,histnorm='percent')
 data = [trace]
 # defining layout
 layout = go.Layout(title="Post_type Distribution")
@@ -43,7 +43,7 @@ layout = go.Layout(title="Post_type Distribution")
 fig = go.Figure(data = data,layout = layout)
 st.plotly_chart(fig, use_container_width=True)
 # defining data
-trace = go.Histogram(x=df['compound'],nbinsx=40,histnorm='percent')
+trace = go.Histogram(x=df['compound'],nbinsx=50,histnorm='percent')
 data = [trace]
 # defining layout
 layout = go.Layout(title="Compound Distribution")
@@ -55,7 +55,7 @@ st.markdown('The distribution is [-1,-0.5] negative')
 st.markdown('The distribution is ]-0.5,0.5] neutral')
 st.markdown('The distribution is [0.5,1.0] positive')
 # defining data
-trace = go.Histogram(x=df['influencer'],nbinsx=40,histnorm='percent')
+trace = go.Histogram(x=df['influencer'],nbinsx=50,histnorm='percent')
 data = [trace]
 # defining layout
 layout = go.Layout(title="Influencer Distribution")
