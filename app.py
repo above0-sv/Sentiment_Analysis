@@ -46,14 +46,14 @@ st.plotly_chart(fig, use_container_width=True)
 trace = go.Histogram(x=df['compound'],nbinsx=40,histnorm='percent')
 data = [trace]
 # defining layout
-st.markdown('The distribution is [-1,-0.5] negative')
-st.markdown('The distribution is ]-0.5,0.5] neutral')
-st.markdown('The distribution is [0.5,1.0] positive')
 layout = go.Layout(title="compound Distribution")
 # defining figure and plotting
 fig = go.Figure(data = data,layout = layout)
 iplot(fig)
 st.plotly_chart(fig, use_container_width=True)
+st.markdown('The distribution is [-1,-0.5] negative')
+st.markdown('The distribution is ]-0.5,0.5] neutral')
+st.markdown('The distribution is [0.5,1.0] positive')
 # defining data
 trace = go.Histogram(x=df['influencer'],nbinsx=40,histnorm='percent')
 data = [trace]
