@@ -7,8 +7,6 @@ df.head()
 from plotly.offline import init_notebook_mode,iplot
 import plotly.graph_objects as go
 import cufflinks as cf
-init_notebook_mode(connected=True)
-as Youtube')
 st.subheader('Sentiment distribution')
 #labels
 lab = df["comp_score"].value_counts().keys().tolist()
