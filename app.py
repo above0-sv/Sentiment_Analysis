@@ -29,7 +29,7 @@ trace = go.Histogram(x=df['platform'],nbinsx=40,histnorm='percent')
 data = [trace]
 # defining layout
 st.markdown('The platform used by the users was Youtube')
-layout = go.Layout(title="platform Distribution")
+layout = go.Layout(title="Platform Distribution")
 # defining figure and plotting
 fig = go.Figure(data = data,layout = layout)
 iplot(fig)
@@ -38,7 +38,7 @@ st.plotly_chart(fig, use_container_width=True)
 trace = go.Histogram(x=df['post_type'],nbinsx=40,histnorm='percent')
 data = [trace]
 # defining layout
-layout = go.Layout(title="post_type Distribution")
+layout = go.Layout(title="Post_type Distribution")
 # defining figure and plotting
 fig = go.Figure(data = data,layout = layout)
 st.plotly_chart(fig, use_container_width=True)
@@ -46,7 +46,7 @@ st.plotly_chart(fig, use_container_width=True)
 trace = go.Histogram(x=df['compound'],nbinsx=40,histnorm='percent')
 data = [trace]
 # defining layout
-layout = go.Layout(title="compound Distribution")
+layout = go.Layout(title="Compound Distribution")
 # defining figure and plotting
 fig = go.Figure(data = data,layout = layout)
 iplot(fig)
