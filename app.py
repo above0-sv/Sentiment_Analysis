@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import plotly as plt
-st.write('Above Zero Chegg Sentimental Analysis report')
+st.title('Above Zero Chegg Sentimental Analysis report')
 df=pd.read_csv('chegg_final.csv')
 df.head() 
 from plotly.offline import init_notebook_mode,iplot
