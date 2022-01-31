@@ -28,7 +28,6 @@ st.plotly_chart(fig, use_container_width=True)
 trace = go.Histogram(x=df['platform'],nbinsx=50,histnorm='percent')
 data = [trace]
 # defining layout
-st.header('The platform used by the users was Youtube')
 layout = go.Layout(title="Platform Distribution")
 # defining figure and plotting
 fig = go.Figure(data = data,layout = layout)
@@ -37,6 +36,7 @@ st.plotly_chart(fig, use_container_width=True)
 # defining data
 trace = go.Histogram(x=df['post_type'],nbinsx=50,histnorm='percent')
 data = [trace]
+st.subheader('The platform used by the users was Youtube')
 # defining layout
 layout = go.Layout(title="Post_type Distribution")
 # defining figure and plotting
